@@ -9,7 +9,7 @@ import { getAttractions, useAttractions } from "./AttractionProvider.js"
 //RICHIE 
 
 const eventHub = document.querySelector("main")
-const contentTarget = document.querySelector(".filteredAttraction")
+const contentTarget = document.querySelector(".filters__attraction")
 const selectedTarget = document.querySelector(".selectedAttraction")
 
 eventHub.addEventListener("change", event => {
