@@ -12,7 +12,6 @@ eventHub.addEventListener("change", event => {
                 eateryThatWasChosen: event.target.value
             }
         })
-        console.log(customEvent)
         eventHub.dispatchEvent(customEvent)
 
     }
@@ -24,7 +23,6 @@ export const EaterySelect = () => {
     getEateries()
     .then(() => {
     const eatery = useEateries(); 
-    console.log(eatery) 
     render(eatery)
 })
 }
