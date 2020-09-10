@@ -1,4 +1,69 @@
+.logo {
+    width: 10em;
+}
+
 .filters {
     display: flex;
+    flex-flow: row ;    
+}
+
+button {
+    float: right; 
+}
+
+/* //drop down font */
+select {
+    font-family: "comic sans ms"; 
+}
+
+.itinerary {
+    border: 10px solid;
+    width: 30%;
+    padding: 10px;
+}
+
+.selectedAttraction {
+    margin: 2em 0em 2em 0em;
+}
+
+.breakBox {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.details {
+    margin: 2em; 
+    width: 45%;
+}
+
+.photoBox {
+    border: 1px solid; 
+    height: 30px; 
+}
+
+.weatherBox {
+    border: 3px solid; 
+    display: flex;
     flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 1em; 
+}
+
+.card-day {
+    text-align: center;
+    width: 20%;
+}
+
+.detailsBox {
+    border: 1px solid; 
+    height: 45px;
+}
+
+.saved {
+    width: 15%;
+    border: 2em dotted; 
+}
+
+h2 {
+    text-align: center;
 }

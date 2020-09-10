@@ -10,6 +10,6 @@ eventHub.addEventListener("eateryChosen", event => {
 
 export const postedEatery = (chosenEatery) => {
     eateryTarget.innerHTML = `
-    <div>${chosenEatery}</div>
-    <button>details</button>`
+    ${chosenEatery}
+    <button>Details</button>`
 }
