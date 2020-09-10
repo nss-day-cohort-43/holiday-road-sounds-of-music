@@ -9,7 +9,7 @@ const eventHub = document.querySelector("main")
 eventHub.addEventListener('parkChosen', event => {  
     const zipCode = event.detail.zip
     weatherDays(zipCode)
-}
+})
 
     
 
@@ -17,8 +17,18 @@ eventHub.addEventListener('parkChosen', event => {
 const weatherDays = (zipCode) => {
     getWeather(zipCode) 
     // getNotes initiates the api call
-    .then(useWeather)
-    .then(render)
+    .then(() => {
+        const weatherArray = useWeather()
+    })
+    .then(() => {
+
+        const fiveDay = weatherArray.filter(tacoReport => {
+            const weatherTime = tacoReport.list.dt_txt
+            if (weatherTime.includes("15:00:00") {
+            return tacoReport
+           }
+        }
+        render(fiveDay)
         // calls the render function below and passes in the 
         // 5 daysfrom useWeather
 }
