@@ -6,7 +6,7 @@ import {getParks, useParks} from './ParkProvider.js'
 
 
 const eventHub = document.querySelector("main")
-const selectTarget = document.querySelector(".fileteredPark")
+const selectTarget = document.querySelector(".filters__park")
 const selectedTarget = document.querySelector(".selectedPark")
 
 // On the event hub, listen for a "change" event.
