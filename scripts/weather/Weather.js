@@ -1,13 +1,11 @@
-export const weatherHTML = (criminalTaco) => {
+export const weatherHTML = (weatherDayTaco) => {
     return `
-        <section id="criminal-${criminalTaco.id}" class="card-criminal">
-            <h4>${criminalTaco.name}</h4>
-            <p>Age: ${criminalTaco.age}</p>
-            <p>Crime: ${criminalTaco.conviction}</p>
-            <p>Term start: ${new Date(criminalTaco.incarceration.start).toLocaleDateString('en-US')}</p>
-            <p>Term end: ${new Date(criminalTaco.incarceration.end).toLocaleDateString('en-US')}</p>
-            <button id="associates--${criminalTaco.id}">Alibis</button>
-            ${AlibiDialog(criminalTaco.id)}
+        <section class="card-day">
+            <div class="icon">
+            <img src="http://openweathermap.org/img/wn/${weatherDayTaco.weather[0].icon}@2x.png" alt="Weather Icon">
+            </div>
+            <p>${weatherDayTaco.weather[0].description}</p>
+            <p>${weatherDayTaco.main.temp}</p>
         </section>     
     `
 }
