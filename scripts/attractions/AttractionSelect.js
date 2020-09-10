@@ -9,9 +9,16 @@ import { getAttractions, useAttractions } from "./AttractionProvider.js"
 //RICHIE 
 
 const eventHub = document.querySelector("main")
+const contentTarget = document.querySelector(".filteredAttraction")
+const selectedTarget = document.querySelector(".selectedAttraction")
 
 eventHub.addEventListener("change", event => {
     if (event.target.id === "attractionSelect") {
+        selectedTarget.innerHTML = ""
+        selectedTarget.innerHTML += `
+            ${event.target.value}
+            <button id="attractionDetails">Details</button>
+        `
         const customEvent = new CustomEvent("attractionChosen", {
             detail: {
                 attractionThatWasChosen: event.target.value
@@ -20,8 +27,6 @@ eventHub.addEventListener("change", event => {
         eventHub.dispatchEvent(customEvent)
     }
 })
-
-const contentTarget = document.querySelector(".filteredAttraction")
 
 export const attractionSelect = () => {
     getAttractions()
@@ -36,8 +41,8 @@ const render = attractionArray => {
     <select class="dropdown" id="attractionSelect">
 			<option value="0">Select a Bizzare Attraction...</option>
 			${
-        attractionArray.map(attractionObject => {
-            return `<option value="${attractionObject.name}">${attractionObject.name}</option>`
+                attractionArray.map(eventect => {
+                    return `<option value="${eventect.name}">${eventect.name}</option>`
         }).join("")
         }
 		</select>
