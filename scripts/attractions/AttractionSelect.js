@@ -10,15 +10,10 @@ import { getAttractions, useAttractions } from "./AttractionProvider.js"
 
 const eventHub = document.querySelector("main")
 const contentTarget = document.querySelector(".filters__attraction")
-const selectedTarget = document.querySelector(".selectedAttraction")
 
 eventHub.addEventListener("change", event => {
     if (event.target.id === "attractionSelect") {
-        selectedTarget.innerHTML = ""
-        selectedTarget.innerHTML += `
-            ${event.target.value}
-            <button id="attractionDetails">Details</button>
-        `
+        
         const customEvent = new CustomEvent("attractionChosen", {
             detail: {
                 attractionThatWasChosen: event.target.value
@@ -41,8 +36,8 @@ const render = attractionArray => {
     <select class="dropdown" id="attractionSelect">
 			<option value="0">Select a Bizzare Attraction...</option>
 			${
-                attractionArray.map(eventect => {
-                    return `<option value="${eventect.name}">${eventect.name}</option>`
+                attractionArray.map(attractionObj => {
+                    return `<option value="${attractionObj.name}">${attractionObj.name}</option>`
         }).join("")
         }
 		</select>
