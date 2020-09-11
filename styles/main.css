@@ -17,7 +17,7 @@ select {
 }
 
 .itinerary {
-
+    background-color: bisque;
     width: 30%;
     padding: 10px;
 }
@@ -29,17 +29,12 @@ select {
 .breakBox {
     display: flex;
     flex-wrap: nowrap;
-
 }
 
 .details {
     margin: 2em; 
     width: 45%;
 }
-
-/* .photoBox {
-
-} */
 
 .parkPhoto {
     max-width: 100%;
@@ -60,13 +55,18 @@ select {
 }
 
 .icons {
-    max-width: 55px;
+    max-width: 65px;
 }
 
+.detailsBox:empty {
+    display: none;
+}
+
+
 .detailsBox {
-    border: 1px solid; 
-    min-height: 45px;
     padding: 1em;
+    margin-top: 1em;
+    background-color: white;
 }
 
 .saved {
@@ -81,9 +81,12 @@ h2 {
 footer {
     background-color: olivedrab;
     width: 100%;
-    padding: .5em;
+    padding: .25em;
     text-align: center;
-    /* float: bottom; */
     position: fixed;
     bottom: 0;
+}
+
+.selectedEat {
+    margin-bottom: 3em;
 }
