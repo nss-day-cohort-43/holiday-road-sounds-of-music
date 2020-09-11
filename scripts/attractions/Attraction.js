@@ -35,6 +35,7 @@ const render = (attractionObj) => {
     <section>
         <h3>Attraction: ${attractionObj.name}</h3>
             <p class="attraction-location">Location: ${attractionObj.city}, ${attractionObj.state}</p>
+            <p class="attraction-address">Location: ${attractionObj.city}, ${attractionObj.state}</p>
             <p class="attraction-description">Decription: ${attractionObj.description}</p>
     </section>
     `
