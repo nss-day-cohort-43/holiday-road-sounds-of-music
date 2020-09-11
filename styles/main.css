@@ -38,7 +38,7 @@ select {
 
 .photoBox {
     border: 1px solid; 
-    height: 30px; 
+    min-height: 30px; 
 }
 
 .weatherBox {
@@ -56,7 +56,8 @@ select {
 
 .detailsBox {
     border: 1px solid; 
-    height: 45px;
+    min-height: 45px;
+    padding: 2px;
 }
 
 .saved {
