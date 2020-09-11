@@ -34,9 +34,8 @@ const render = (attractionObj) => {
     contentTarget.innerHTML += `
     <section>
         <h2>${attractionObj.name}</h2>
-            <p class="attraction-location">Location: ${attractionObj.city}, ${attractionObj.state}</p>
-            <p class="attraction-address">Location: ${attractionObj.city}, ${attractionObj.state}</p>
-            <p class="attraction-description">Decription: ${attractionObj.description}</p>
+            <p class="attraction-location">${attractionObj.city}, ${attractionObj.state}</p>
+            <p class="attraction-description">${attractionObj.description}</p>
     </section>
     `
 }
