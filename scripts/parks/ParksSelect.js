@@ -2,7 +2,7 @@
 // weather, photobox and itinerary are listening
 
 import {getParks, useParks} from './ParkProvider.js'
-
+import {itineraryPreview} from './Parks.js'
 
 
 const eventHub = document.querySelector("main")
@@ -11,7 +11,6 @@ const selectedTarget = document.querySelector(".selectedPark")
 
 // On the event hub, listen for a "change" event.
 eventHub.addEventListener("change", event => {
-    //console.log(event.target.value)
     // This targets only the HTML element with the ID of "parkSelect" and execute only when element changed
     if (event.target.id === "parkSelect") {
         const selectedString = event.target.value
@@ -20,10 +19,9 @@ eventHub.addEventListener("change", event => {
         selectedTarget.innerHTML = ""
         selectedTarget.innerHTML += `
             ${selected}
-            <button> Details </button>
+            ${itineraryPreview(selected)}
             `
         // Create custom event. Provide an appropriate name.
-        //console.log(event)
         const customEvent = new CustomEvent("parkChosen", {
             detail: {
                 parkThatWasChosen: event.target.value,
@@ -40,7 +38,6 @@ const render = parksCollection => {
     selectTarget.innerHTML = `
         <select class="dropdown" id="parkSelect">
             <option value="0">Please select a park...</option>
-            
             ${
                 parksCollection.map(park => {
                     return `<option value="${park.fullName}-${park.addresses[0].postalCode}">${park.fullName}</option>`
