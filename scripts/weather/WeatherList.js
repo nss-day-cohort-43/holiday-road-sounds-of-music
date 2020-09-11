@@ -39,6 +39,7 @@ const render = (aDayTacoArray) => {
     let HTMLArray = aDayTacoArray.map(singleTacoDay => {
         return weatherHTML(singleTacoDay);
     })
+    contentTarget.innerHTML = ""
     contentTarget.innerHTML += HTMLArray.join("");
     // adds to dom without the joining comma
 } 
