@@ -1,8 +1,9 @@
 import {useParks} from './ParkProvider.js'
-import {parkDetailHTML} from './ParkDetails.js'
+import {parkDetailHTML, parkImageHTML} from './ParkDetails.js'
 
 const eventHub = document.querySelector("main")
 const contentTarget = document.querySelector(".detailsBox")
+const photoTarget = document.querySelector(".photoBox")
 
 export const itineraryPreview = (parkName) => {
     return `<button class="park-details" value="${parkName}"> Details </button>`
@@ -22,7 +23,16 @@ eventHub.addEventListener("click", event => {
     }
 })
 
+
 const render = (matchingPark) => {
     contentTarget.innerHTML = ""
     contentTarget.innerHTML = parkDetailHTML(matchingPark)
+    renderIMG(matchingPark)
+}
+
+
+const renderIMG = (matchingPark) => {
+    photoTarget.innerHTML = ""
+    photoTarget.innerHTML = parkImageHTML(matchingPark)
+  
 }
