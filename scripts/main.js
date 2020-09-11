@@ -4,6 +4,7 @@ import {weatherDays} from './weather/WeatherList.js'
 import { EaterySelect } from "./eateries/EaterySelect.js"
 import { postedEatery } from "./eateries/Eatery.js"
 import { attractionSelect } from './attractions/AttractionSelect.js'
+import {postedAttraction} from './attractions/Attraction.js'
 
 
 getParks();
