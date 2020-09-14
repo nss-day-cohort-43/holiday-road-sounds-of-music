@@ -11,3 +11,10 @@ export const parkDetailHTML = (park) => {
     </section>
 `
 }
+
+
+export const parkImageHTML = (park) => {
+    return `
+    <img class="parkPhoto" src="${park.images[0].url}" alt="Image of ${park.fullName}">
+    `
+}
