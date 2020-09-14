@@ -21,11 +21,23 @@ eventHub.addEventListener("change", event => {
             ${selected}
             ${itineraryPreview(selected)}
             `
+
+        const arrayOfParks = useParks()
+
+        const parkObject = arrayOfParks.filter((park) => {
+            if (park.fullName === selected) {
+                const parkURLFinder = park.images[0].url
+    
+                return parkURLFinder
+            }
+        })
+        const parkURL = parkObject[0].images[0].url
         // Create custom event. Provide an appropriate name.
         const customEvent = new CustomEvent("parkChosen", {
             detail: {
                 parkThatWasChosen: event.target.value,
-                parkZip: selectedZip
+                parkZip: selectedZip,
+                parkURL: parkURL
             }
         })
         // Dispatch to event hub
@@ -35,6 +47,8 @@ eventHub.addEventListener("change", event => {
 
 
 const render = parksCollection => {
+
+
     selectTarget.innerHTML = `
             <select class="dropdown" id="parkSelect">
                 <option value="0">Please select a park...</option>

@@ -1,3 +1,6 @@
+const eventHub = document.querySelector("main")
+const photoTarget = document.querySelector(".photoBox")
+
 export const parkDetailHTML = (park) => {
     return `
     <section class="parkDetails">
@@ -13,8 +16,10 @@ export const parkDetailHTML = (park) => {
 }
 
 
-export const parkImageHTML = (park) => {
-    return `
-    <img class="parkPhoto" src="${park.images[0].url}" alt="Image of ${park.fullName}">
+eventHub.addEventListener('parkChosen', event => {  
+    const parkURL = event.detail.parkURL
+    photoTarget.innerHTML = `
+    <img class="parkPhoto" src="${parkURL}" alt="Image of selected park">
     `
-}
+   
+})
