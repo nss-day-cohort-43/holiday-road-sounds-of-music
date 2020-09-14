@@ -1,6 +1,4 @@
-header {
-   
-}
+
 
 .logo {
     width: 10em;
@@ -8,10 +6,15 @@ header {
 
 .mainLine {
     font-family: 'Love Ya Like A Sister', cursive;
+    align-self: center;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
 }
 
 .filters {
@@ -44,6 +47,11 @@ select {
     width: 30%;
     padding: 10px;
     height: 100%;
+    margin-bottom: 2em; 
+}
+
+#tripName {
+    width: 100%;
 }
 
 .selectedAttraction {
@@ -99,11 +107,32 @@ select {
 
 .saved {
     width: 15%;
-    border: 5px dotted; 
+    background-color: #ecf4f3;
+    margin-bottom: 2em; 
+    padding: 1em; 
+    display: flex; 
+    flex-direction: column-reverse;
 }
 
 h2 {
     text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+.savedTrip {
+    color: #ff7e67;
+}
+
+li {
+    font-size: 10px;
+    text-align: left;
+}
+
+ul {
+    margin-top: -1em;
 }
 
 footer {
