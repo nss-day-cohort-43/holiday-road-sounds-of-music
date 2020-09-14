@@ -1,5 +1,17 @@
+header {
+   
+}
+
 .logo {
     width: 10em;
+}
+
+.mainLine {
+    font-family: 'Love Ya Like A Sister', cursive;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
 }
 
 .filters {
@@ -11,19 +23,35 @@ button {
     float: right; 
 }
 
+
 /* //drop down font */
 select {
-    font-family: "comic sans ms"; 
+    /* font-family: "comic sans ms"; */
+    padding: 5px 8px;
+    background-color: #68b0ab;
+    border: none;
+    color: white;
+}
+
+.select:focus,
+.select:hover {
+    outline: none;
+    border: 1px solid #006a71
 }
 
 .itinerary {
-    background-color: bisque;
+    background-color: #ecf4f3;
     width: 30%;
     padding: 10px;
+    height: 100%;
 }
 
 .selectedAttraction {
     margin: 4em 0em 4em 0em;
+}
+
+.selectedEat {
+    margin-bottom: 3em;
 }
 
 .breakBox {
@@ -79,14 +107,12 @@ h2 {
 }
 
 footer {
-    background-color: olivedrab;
+    background-color:	#6d9c7d;
     width: 100%;
     padding: .25em;
+    color: white;
     text-align: center;
     position: fixed;
     bottom: 0;
 }
 
-.selectedEat {
-    margin-bottom: 3em;
-}
