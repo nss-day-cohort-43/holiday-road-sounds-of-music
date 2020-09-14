@@ -1,3 +1,32 @@
 {
-	"itineraries": []
+  "itineraries": [
+    {
+      "id": 1,
+      "selectedPark": "test",
+      "selectedEat": "test",
+      "selectedAttraction": "test",
+      "nameType": "test"
+    },
+    {
+      "selectedPark": "Chickamauga & Chattanooga National Military Park",
+      "selectedEat": "McClard's BBQ",
+      "selectedAttraction": "Owney the Stuffed Dog Postal Mascot",
+      "nameType": "dsadads",
+      "id": 2
+    },
+    {
+      "selectedPark": "Chickamauga & Chattanooga National Military Park",
+      "selectedEat": "McClard's BBQ",
+      "selectedAttraction": "Owney the Stuffed Dog Postal Mascot",
+      "nameType": "dsadads",
+      "id": 3
+    },
+    {
+      "selectedPark": "Fort Donelson National Battlefield",
+      "selectedEat": "Buckhorn Exchange",
+      "selectedAttraction": "Snake World",
+      "nameType": "Hello",
+      "id": 4
+    }
+  ]
 }
