@@ -8,9 +8,11 @@ import {postedAttraction} from './attractions/Attraction.js'
 import {checkElements} from "./itineraries/Itinerary.js"
 import "./itineraries/ItineraryList.js"
 import {initalizeList} from "./itineraries/ItineraryList.js"
+import {selectRuner} from './states/StateSelect.js'
 
-getParks();
-ParkSelect();
+//getParks();
+//ParkSelect();
 EaterySelect();
 attractionSelect();
 initalizeList()
+selectRuner()
