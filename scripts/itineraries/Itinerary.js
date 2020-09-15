@@ -10,17 +10,12 @@ eventHub.addEventListener('click', event => {
 })
 
 
-
-
-
 //checks each div in itinerary preview ... if all fields are filled out, button will show
 export const checkElements = () => {
     const checkEats = document.querySelector(".eatDetailsButton")
     const checkAttractions = document.querySelector(".attractionDetailsButton")
     const checkParks = document.querySelector(".park-details")
     if (checkEats && checkParks && checkAttractions) {
-        console.log("All elements exist")
-        savedObject()
         const saveThis = savedObject()
         saveItinerary(saveThis)
     } 
