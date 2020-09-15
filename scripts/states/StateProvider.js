@@ -8,10 +8,6 @@ const states = [
         "abbreviation": "AK"
     },
     {
-        "name": "American Samoa",
-        "abbreviation": "AS"
-    },
-    {
         "name": "Arizona",
         "abbreviation": "AZ"
     },
@@ -40,20 +36,12 @@ const states = [
         "abbreviation": "DC"
     },
     {
-        "name": "Federated States Of Micronesia",
-        "abbreviation": "FM"
-    },
-    {
         "name": "Florida",
         "abbreviation": "FL"
     },
     {
         "name": "Georgia",
         "abbreviation": "GA"
-    },
-    {
-        "name": "Guam",
-        "abbreviation": "GU"
     },
     {
         "name": "Hawaii",
@@ -90,10 +78,6 @@ const states = [
     {
         "name": "Maine",
         "abbreviation": "ME"
-    },
-    {
-        "name": "Marshall Islands",
-        "abbreviation": "MH"
     },
     {
         "name": "Maryland",
@@ -156,10 +140,6 @@ const states = [
         "abbreviation": "ND"
     },
     {
-        "name": "Northern Mariana Islands",
-        "abbreviation": "MP"
-    },
-    {
         "name": "Ohio",
         "abbreviation": "OH"
     },
@@ -170,10 +150,6 @@ const states = [
     {
         "name": "Oregon",
         "abbreviation": "OR"
-    },
-    {
-        "name": "Palau",
-        "abbreviation": "PW"
     },
     {
         "name": "Pennsylvania",
@@ -212,10 +188,6 @@ const states = [
         "abbreviation": "VT"
     },
     {
-        "name": "Virgin Islands",
-        "abbreviation": "VI"
-    },
-    {
         "name": "Virginia",
         "abbreviation": "VA"
     },
@@ -236,3 +208,7 @@ const states = [
         "abbreviation": "WY"
     }
 ]
+
+export const useStates = () => {
+    return states.slice()
+}

@@ -21,7 +21,6 @@ eventHub.addEventListener("change", event => {
             ${selected}
             ${itineraryPreview(selected)}
             `
-
         const arrayOfParks = useParks()
 
         const parkObject = arrayOfParks.filter((park) => {
@@ -47,8 +46,6 @@ eventHub.addEventListener("change", event => {
 
 
 const render = parksCollection => {
-
-
     selectTarget.innerHTML = `
             <select class="dropdown" id="parkSelect">
                 <option value="0">Please select a park...</option>
@@ -62,8 +59,8 @@ const render = parksCollection => {
 }
 
 
-export const ParkSelect = () => {
-    getParks()
+export const ParkSelect = (stateKey) => {
+    getParks(stateKey)
         .then(() => {
             const parks = useParks()
             render(parks)

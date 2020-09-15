@@ -17,7 +17,6 @@ eventHub.addEventListener('itineraryStateChanged', event => {
 )
 
 const render = (taco) => {
-    console.log(taco)
     const savedHTML = taco.map(singleEntry => {
         return `<div class="tripCard"><h5 class="savedTrip">${singleEntry.nameType}</h5>
         <ul><li>${singleEntry.selectedEat}</li>
