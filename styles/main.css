@@ -7,6 +7,26 @@
 .mainLine {
     font-family: 'Love Ya Like A Sister', cursive;
     align-self: center;
+    font-size: 36px;
+}
+
+.spacer {
+    width: 10%
+}
+
+.textHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-top: -3.5%;
+}
+
+.subHeader {
+    margin: -26px;
+    display: flex;
+    justify-self: center;
+    margin-left: 17.5%;
 }
 
 body {
@@ -15,11 +35,12 @@ body {
 
 header {
     display: flex;
+    justify-content: space-between;
 }
 
 .filters {
     display: flex;
-    flex-flow: row ;    
+    flex-flow: row ;   
 }
 
 button {
