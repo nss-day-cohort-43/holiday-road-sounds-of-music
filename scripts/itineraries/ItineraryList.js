@@ -21,9 +21,11 @@ const render = (taco) => {
     const savedHTML = arrayToMap.map(singleEntry => {
         savedTarget.innerHTML = `<h4>Saved Itineraries</h4>`
         return `<div class="tripCard"><h5 class="savedTrip">${singleEntry.nameType}</h5>
-        <ul><li>${singleEntry.selectedEat}</li>
-        <li>${singleEntry.selectedPark}</li>
-        <li>${singleEntry.selectedAttraction}</li></ul></div>
+        <ul>
+            <li>${singleEntry.selectedPark}</li>
+            <li>${singleEntry.selectedAttraction}</li>
+            <li>${singleEntry.selectedEat}</li>
+        </ul></div>
         `
     })
     savedTarget.innerHTML +=  savedHTML.join("")  
