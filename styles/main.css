@@ -40,7 +40,13 @@ header {
 
 .filters {
     display: flex;
-    flex-flow: row ;   
+    flex-flow: row;
+    background-color: #68b0ab;   
+}
+
+.state-dropdown {
+    width: 300px;
+
 }
 
 button {

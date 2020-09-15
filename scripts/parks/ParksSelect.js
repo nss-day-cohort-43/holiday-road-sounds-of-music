@@ -26,7 +26,6 @@ eventHub.addEventListener("change", event => {
         const parkObject = arrayOfParks.filter((park) => {
             if (park.fullName === selected) {
                 const parkURLFinder = park.images[0].url
-    
                 return parkURLFinder
             }
         })
@@ -48,7 +47,7 @@ eventHub.addEventListener("change", event => {
 const render = parksCollection => {
     selectTarget.innerHTML = `
             <select class="dropdown" id="parkSelect">
-                <option value="0">Please select a park...</option>
+                <option value="0">Select a Park...</option>
                 ${
                     parksCollection.map(park => {
                         return `<option value="${park.fullName}-${park.addresses[0].postalCode}">${park.fullName}</option>`

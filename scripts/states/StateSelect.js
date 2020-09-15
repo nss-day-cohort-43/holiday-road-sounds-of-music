@@ -24,8 +24,8 @@ export const selectRuner = () => {
 
 const render = (states) => {
     selectTarget.innerHTML = `
-            <select class="dropdown" id="stateSelect">
-                <option value="0">Please select a state...</option>
+            <select class="dropdown state-dropdown" id="stateSelect">
+                <option value="0">Select a State...</option>
                 ${
                     states.map(state => {
                         return `<option value="${state.abbreviation}">${state.name}</option>`
