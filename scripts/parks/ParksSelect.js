@@ -26,7 +26,6 @@ eventHub.addEventListener("change", event => {
         const parkObject = arrayOfParks.filter((park) => {
             if (park.fullName === selected) {
                 const parkURLFinder = park.images[0].url
-    
                 return parkURLFinder
             }
         })

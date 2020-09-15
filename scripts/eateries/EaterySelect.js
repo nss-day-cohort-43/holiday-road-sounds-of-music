@@ -6,17 +6,14 @@ const contentTarget = document.querySelector(".filters__eateries")
 
 eventHub.addEventListener("change", event => {
     if (event.target.id === "eaterySelect") {
-    
         const customEvent = new CustomEvent("eateryChosen", {
             detail: {
                 eateryThatWasChosen: event.target.value
             }
         })
         eventHub.dispatchEvent(customEvent)
-
     }
 }) 
-
 
 
 export const EaterySelect = () => {
