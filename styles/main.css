@@ -134,6 +134,10 @@ select {
     flex-direction: column;
 }
 
+.tripCard {
+    margin-top: -2em;
+}
+
 h2 {
     text-align: center;
 }
