@@ -1,9 +1,5 @@
 const states = [
     {
-        "name": "Alabama",
-        "abbreviation": "AL"
-    },
-    {
         "name": "Alaska",
         "abbreviation": "AK"
     },
@@ -30,10 +26,6 @@ const states = [
     {
         "name": "Delaware",
         "abbreviation": "DE"
-    },
-    {
-        "name": "District Of Columbia",
-        "abbreviation": "DC"
     },
     {
         "name": "Florida",
@@ -80,10 +72,6 @@ const states = [
         "abbreviation": "ME"
     },
     {
-        "name": "Maryland",
-        "abbreviation": "MD"
-    },
-    {
         "name": "Massachusetts",
         "abbreviation": "MA"
     },
@@ -126,10 +114,6 @@ const states = [
     {
         "name": "New Mexico",
         "abbreviation": "NM"
-    },
-    {
-        "name": "New York",
-        "abbreviation": "NY"
     },
     {
         "name": "North Carolina",
@@ -186,10 +170,6 @@ const states = [
     {
         "name": "Vermont",
         "abbreviation": "VT"
-    },
-    {
-        "name": "Virginia",
-        "abbreviation": "VA"
     },
     {
         "name": "Washington",
