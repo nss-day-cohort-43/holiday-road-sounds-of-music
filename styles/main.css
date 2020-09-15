@@ -29,7 +29,6 @@ button {
 
 /* //drop down font */
 select {
-    /* font-family: "comic sans ms"; */
     padding: 5px 8px;
     background-color: #68b0ab;
     border: none;
@@ -74,11 +73,11 @@ select {
 
 .parkPhoto {
     max-width: 100%;
+    margin-top: -2em;
     margin-bottom: -0.5em;
 }
 
 .weatherBox {
-    /* border: 3px solid;  */
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -143,5 +142,6 @@ footer {
     text-align: center;
     position: fixed;
     bottom: 0;
+    font-size: .85em;
 }
 

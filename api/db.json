@@ -118,6 +118,13 @@
       "selectedAttraction": "World’s Most Scenic Urinal",
       "nameType": "The newest one",
       "id": 17
+    },
+    {
+      "selectedPark": "0",
+      "selectedEat": "Big Bob Gibson Bar-B-Que",
+      "selectedAttraction": "Giant Tattoo Needle",
+      "nameType": "zero",
+      "id": 18
     }
   ]
 }
