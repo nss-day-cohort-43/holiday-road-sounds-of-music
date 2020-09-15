@@ -22,26 +22,18 @@
       "id": 20
     },
     {
-<<<<<<< HEAD
-      "selectedPark": "Cumberland Gap National Historical Park",
-      "selectedEat": "Joe's Stone Crab",
-      "selectedAttraction": "World’s Most Scenic Urinal",
-      "nameType": "The newest one",
-      "id": 17
-    },
-    {
-      "selectedPark": "Fort Donelson National Battlefield",
-      "selectedEat": "Marge's Pancake House",
-      "selectedAttraction": "Chicken Wire Minnie Pearl",
-      "nameType": "Cool time",
-      "id": 18
-=======
       "selectedPark": "Trail Of Tears National Historic Trail",
       "selectedEat": "The Old Clam House",
       "selectedAttraction": "Where Kurt Cobain Lived in a Refrigerator Box",
       "nameType": "Romance 101",
       "id": 21
->>>>>>> master
+    },
+    {
+      "selectedPark": "Pony Express National Historic Trail",
+      "selectedEat": "Deer Park Tavern",
+      "selectedAttraction": "Owney the Stuffed Dog Postal Mascot",
+      "nameType": "Animals!!!",
+      "id": 22
     }
   ]
 }

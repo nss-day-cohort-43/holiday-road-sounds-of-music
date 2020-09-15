@@ -131,7 +131,7 @@ select {
     margin-bottom: 2em; 
     padding: 1em; 
     display: flex; 
-    flex-direction: column-reverse;
+    flex-direction: column;
 }
 
 h2 {
@@ -154,6 +154,8 @@ li {
 ul {
     margin-top: -1em;
 }
+
+
 
 footer {
     background-color:	#6d9c7d;

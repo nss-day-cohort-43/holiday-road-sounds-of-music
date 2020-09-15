@@ -17,16 +17,16 @@ eventHub.addEventListener('itineraryStateChanged', event => {
 )
 
 const render = (taco) => {
-    const savedHTML = taco.map(singleEntry => {
+    const arrayToMap = taco.reverse()
+    const savedHTML = arrayToMap.map(singleEntry => {
+        savedTarget.innerHTML = `<h4>Saved Itineraries</h4>`
         return `<div class="tripCard"><h5 class="savedTrip">${singleEntry.nameType}</h5>
         <ul><li>${singleEntry.selectedEat}</li>
         <li>${singleEntry.selectedPark}</li>
         <li>${singleEntry.selectedAttraction}</li></ul></div>
         `
     })
-
-    savedTarget.innerHTML +=  savedHTML.join("") + `<h4>Saved Itineraries</h4>` 
-    
+    savedTarget.innerHTML +=  savedHTML.join("")  
 }
 
 export const initalizeList = ( ) => {
