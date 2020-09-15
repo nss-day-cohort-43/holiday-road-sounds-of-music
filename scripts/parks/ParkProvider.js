@@ -2,6 +2,7 @@
 //TRAVIS 
 import {keys} from '../Settings.js'
 
+
 let parks = []
 
 export const useParks = () => {
@@ -9,8 +10,8 @@ export const useParks = () => {
 }
 
 
-export const getParks = () => {
-    return fetch("https://developer.nps.gov/api/v1/parks?stateCode=TN&api_key=" + keys.npsKey)
+export const getParks = (stateKey) => {
+    return fetch(`https://developer.nps.gov/api/v1/parks?stateCode=${stateKey}&api_key=${keys.npsKey}`)
         .then(response => response.json())
         .then(
             parsedParks => {
