@@ -6,14 +6,12 @@ We used HTML, CSS, CSS Imports, EventHub, Flexbox, JavaScript native modules, gi
 
 The most important lessons I learned during this group project involved extending my understanding of EventHub including sending and listening for events on separate modules. I also gained knowledge of finding, filtering, and using information from an external API. This project benefitted from our group's pre-planning of our components, structure, layout, and modules before we started writing code. 
 
-The persona of our target client:
-![Persona of Anna](https://github.com/nss-day-cohort-43/holiday-road-sounds-of-music/blob/master/imgs/Persona-Anna.png)
+Sketchboard of the planning stage:
+![sketchboard](./imgs/Holiday-Road-Sketchboard.png)
 
-Here's our Sketchboard of our planning stage:
-![sketchboard](https://github.com/nss-day-cohort-43/holiday-road-sounds-of-music/blob/master/imgs/Holiday-Road-Sketchboard.png)
+Actual webpage:
+![Holiday Road Webpage](./imgs/HolidayRoadWebpage.png)
 
-Our color palette inspiration for this site:
-![Color Palette](https://github.com/nss-day-cohort-43/holiday-road-sounds-of-music/blob/master/imgs/ColorPaletteInspiration.png)
 
 ## Getting Started
 After cloning the repository
@@ -44,3 +42,9 @@ http://holidayroad.nss.team/bizarreries
 http://holidayroad.nss.team/eateries
 
 
+
+Persona of target client:
+![Persona of Anna](./imgs/Persona-Anna.png)
+
+Color palette inspiration:
+![Color Palette](./imgs/ColorPaletteInspiration.png)
