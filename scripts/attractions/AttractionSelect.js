@@ -4,9 +4,11 @@
 // sending info to itinerary preview box 
 // also listens to the chosen park 
 
+
+
+
 import { getAttractions, useAttractions } from "./AttractionProvider.js"
 
-//RICHIE 
 
 const eventHub = document.querySelector("main")
 const contentTarget = document.querySelector(".filters__attraction")
